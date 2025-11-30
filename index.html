@@ -1,12 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nico's first Website</title>
-    <link rel="stylesheet" href=" styles.css">
+  <meta charset="utf-8">
+  <title>Arizona Architecture - Home</title>
+
+  <!-- Meta description requirement -->
+  <meta name="description" content="Discover Phoenix’s architecturally significant spaces and learn how design, climate, and culture intersect in Arizona’s built environment.">
+
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    Hello World I am learning to create websites
+  <div id="wrapper">
+    <header>
+      <h1>Arizona Architecture</h1>
+      <p>Exploring Phoenix’s architecturally significant spaces.</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="taliesin.html">Taliesin West</a></li>
+        <li><a href="biltmore.html">Arizona Biltmore</a></li>
+        <li><a href="cosanti.html">Cosanti</a></li>
+        <li><a href="burtonbarr.html">Burton Barr Library</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <!-- HERO IMAGE SECTION -->
+      <section>
+        <img
+          src="images/home-hero.jpg"
+          alt="Phoenix skyline at sunset"
+          style="width:100%; height:auto; margin-bottom: 1.5em;">
+      </section>
+
+      <!-- Welcome / Goal section -->
+      <section>
+        <h2>Welcome</h2>
+        <p>
+          The goal of this website is to showcase Phoenix’s architecturally significant spaces and educate visitors about how design,
+          climate, and culture intersect in Arizona’s built environment.
+        </p>
+        <p>
+          Use the navigation above to explore four featured locations: Taliesin West, Arizona Biltmore, Cosanti, and Burton Barr Central Library.
+        </p>
+      </section>
+
+      <!-- Overview / Featured buildings -->
+      <section>
+        <h2>Featured Buildings</h2>
+        <p>
+          Each page provides facts, images, and short histories about the sites, along with information that can help visitors learn more or plan a visit.
+        </p>
+        <ul>
+          <li><strong>Taliesin West</strong> – Frank Lloyd Wright’s desert laboratory and winter home in Scottsdale.</li>
+          <li><strong>Arizona Biltmore</strong> – A historic resort known for its Biltmore blocks and Art Deco influences.</li>
+          <li><strong>Cosanti</strong> – Paolo Soleri’s experimental studio and home of the iconic bronze and ceramic bells.</li>
+          <li><strong>Burton Barr Central Library</strong> – A modern civic landmark designed by Will Bruder and DWL Architects.</li>
+        </ul>
+      </section>
+
+      <!-- Comparison table requirement -->
+      <section>
+        <h2>Building Overview</h2>
+        <p>This table gives a quick comparison of the four featured buildings.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Building</th>
+              <th>Location</th>
+              <th>Architect</th>
+              <th>Main Focus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Taliesin West</td>
+              <td>Scottsdale, AZ</td>
+              <td>Frank Lloyd Wright</td>
+              <td>Desert-integrated campus and architecture school</td>
+            </tr>
+            <tr>
+              <td>Arizona Biltmore</td>
+              <td>Phoenix, AZ</td>
+              <td>Albert Chase McArthur</td>
+              <td>Resort hotel with patterned Biltmore block walls</td>
+            </tr>
+            <tr>
+              <td>Cosanti</td>
+              <td>Paradise Valley, AZ</td>
+              <td>Paolo Soleri</td>
+              <td>Experimental earth-cast forms and wind bells</td>
+            </tr>
+            <tr>
+              <td>Burton Barr Library</td>
+              <td>Phoenix, AZ</td>
+              <td>Will Bruder + DWL Architects</td>
+              <td>Civic library with dramatic natural light</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Feedback form -->
+      <section id="feedback">
+        <h2>Feedback</h2>
+        <p>
+          The purpose of this form is to collect feedback and opinions from visitors who explore the website and may have visited the locations.
+        </p>
+
+        <form action="#" method="post">
+          <div class="form-row">
+            <label for="name">Name:</label>
+            <input id="name" name="name" type="text">
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email Address:</label>
+            <input id="email" name="email" type="email">
+          </div>
+
+          <div class="form-row">
+            <label for="favorite">Favorite Building:</label>
+            <select id="favorite" name="favorite">
+              <option value="taliesin">Taliesin West</option>
+              <option value="biltmore">Arizona Biltmore</option>
+              <option value="cosanti">Cosanti</option>
+              <option value="burtonbarr">Burton Barr Library</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="comments">Comments or Suggestions:</label>
+            <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+          </div>
+
+          <div class="form-row">
+            <input type="submit" value="Submit Feedback">
+          </div>
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Arizona Architecture.</p>
+      <p>Contact: info@arizonaarchitecture.example</p>
+    </footer>
+
+  </div> <!-- end wrapper -->
 </body>
 </html>

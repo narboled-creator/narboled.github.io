@@ -1,3 +1,172 @@
+/* ===========================
+   GLOBAL COLOR VARIABLES
+   (from realtimecolors)
+   =========================== */
+:root {
+  --text: #334A7B;
+  --background: #FFFFFF;
+  --primary: #D14930;
+  --secondary: #F5F3EE;
+  --accent: #B33E26;
+}
+
+/* ===========================
+   PAGE BASE STYLES
+   =========================== */
 body {
-    background-color:aqua
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--secondary);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: var(--background);
+  border: 1px solid #cccccc;
+}
+
+/* ===========================
+   HEADER
+   =========================== */
+header {
+  background-color: var(--primary);
+  color: #ffffff;
+  padding: 1em;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* ===========================
+   NAVIGATION
+   =========================== */
+nav {
+  background-color: var(--accent);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.5em;
+}
+
+nav li {
+  display: inline;
+  margin-right: 1em;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ===========================
+   MAIN CONTENT
+   =========================== */
+main {
+  padding: 1em;
+}
+
+h2 {
+  color: var(--primary);
+  margin-top: 0.5em;
+}
+
+/* ===========================
+   TABLE STYLING
+   =========================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5em;
+}
+
+th, td {
+  border: 1px solid #cccccc;
+  padding: 0.5em;
+  text-align: left;
+}
+
+thead {
+  background-color: var(--secondary);
+}
+
+/* ===========================
+   FORM STYLING
+   =========================== */
+#feedback {
+  margin-top: 1.5em;
+  padding-top: 1em;
+  border-top: 1px solid #dddddd;
+}
+
+.form-row {
+  margin-bottom: 0.75em;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.25em;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.4em;
+  border: 1px solid #cccccc;
+  font-size: 0.95em;
+}
+
+/* Submit Button */
+input[type="submit"] {
+  background-color: var(--primary);
+  color: #ffffff;
+  border: none;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+footer {
+  background-color: var(--text);
+  color: #ffffff;
+  text-align: center;
+  padding: 0.5em;
+  font-size: 0.85em;
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* ===========================
+   GLOBAL SPACING + IMAGE STYLES
+   (subpage layout improvements)
+   =========================== */
+
+/* Space between sections */
+main section {
+  margin-bottom: 1.5em;
+}
+
+/* Default image styling for all content images */
+main img {
+  display: block;          /* puts images on their own line */
+  max-width: 100%;         /* prevents overflow */
+  height: auto;            /* keeps proportions */
+  margin-bottom: 1em;      /* spacing below images */
+  border-radius: 4px;      /* subtle rounded corners */
 }
